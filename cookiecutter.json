@@ -3,7 +3,10 @@
         "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
         "repo_username": "emencia",
         "repo_host": "github.com",
-       
+        "foundation_version": "5.5",
+        "compass_version": "1.0.3",
+
+
         "enable_accounts": "no",
         "enable_contact_form": "yes",
         "enable_porticus": "yes",

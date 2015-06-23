@@ -1,7 +1,7 @@
 PYTHON2_PATH=`which python2.7`
 VIRTUALENV_PYTHON2_ARG= --python $(PYTHON2_PATH)
 
-.PHONY: help install clean delpyc assets scss syncf5 tar_data import_db
+.PHONY: help install clean delpyc assets scss syncf5 tar_data import_db compass_install
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -53,4 +53,7 @@ import_db:
 	@bin/django-instance migrate --fake
 	@echo "Running data loading from dump directory"
 	@bin/dataload
+
+compass_install:
+	sudo gem install compass -v {{ compass_version }}
 
