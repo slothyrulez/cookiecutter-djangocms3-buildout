@@ -55,5 +55,6 @@ import_db:
 	@bin/dataload
 
 compass_install:
+	sudo gem uninstall commpass --force
 	sudo gem install compass -v {{ compass_version }}
 
